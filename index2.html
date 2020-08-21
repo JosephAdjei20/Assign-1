@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        #frm{
+            float: left;
+            margin: 20PX; 
+            height: 80%;
+           
+        }
+        #Address{
+            float: right;
+            margin: 20PX;
+        }
+        #Center{
+            /* width: 80%;
+            margin: 0 auto;
+            height: 500px; */
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 80%;
+            margin: 10px auto;
+        }
+        #map img{
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            border: 1px solid blue;
+            
+        }
+        
+        
+        
+        button{
+            background-color: blue;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            border-style: none;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        button a{
+            color: white;
+            text-decoration-line: none;
+        }
+        input{
+            border-radius: 15px;
+            padding: 5px;
+            border-style: solid blue;
+            border-style: none;
+            border: 1px solid blue;
+            width: 80%;
+            margin-top: 10px;
+            
+        }
+        #msg{
+            height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="Center" >
+        <div id="frm">
+            <form style="height:100%;"
+    
+    
+               action="https://formspree.io/mnqgyzyk" method="POST">
+                <label for="fname"> Name:</label><br>
+                <input type="text" id="fname" name="fname" value="" required><br>
+                <label for="lname">Contact:</label><br>
+                <input type="number" id="lname" name="lname" value="" required><br>
+                <label for="lname">Email:</label><br>
+                <input type="text" id="lname" name="Email" value="" required><br>
+                <label for="lname">Message:</label><br>
+                <input type="text" id="msg" name="Message" value="" required><br>
+    
+                <button><b>Submit</b></button>
+    
+                
+                
+            </form>
+    </div>
+</body>
+</html>
